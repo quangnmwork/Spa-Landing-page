@@ -1,12 +1,18 @@
 .section-benefit{
-    padding: 9rem 20rem;
-    
+    padding: 9rem 10rem;
+   
+    @include response(tab-port){
+        padding: 5rem 0rem;
+    }    
 }
 .section-philsophy{
     padding: 5rem 1rem;
 }
 .section-expert{
     padding: 10rem 10rem;
+    @include response(tab-port){
+        padding: 10rem 0rem;
+    }   
 }
 .section-stories{
     position: relative;
@@ -26,11 +32,24 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @include response(tab-port){
+        flex-direction: column;
+    }
 }
 .section-products{
     padding: 7rem 10rem;
+    @include response(tab-land){
+        padding : 7rem 12rem ; 
+
+    }
+    @include response(tab-port){
+        padding: 5rem 2rem;
+    }
 }
 .section-booking{
     padding: 10rem;
     background-image: linear-gradient(to right bottom , $color-primary , $color-primary-dark);
+    @include response(tab-port){
+        padding:5rem ;
+    }
 }

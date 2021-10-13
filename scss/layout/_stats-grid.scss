@@ -4,6 +4,11 @@
     display: grid;
     text-align: center;
     grid-column: center-start/center-end;
-    grid-template-columns: repeat(4, minmax(26rem, 1fr));
+    grid-template-columns: repeat(4, minmax(2.5rem, 1fr));
     justify-items: center; 
+    @include response(tab-port){
+        grid-column: center-start/center-end;
+        grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+        justify-items: center; 
+    }
 }

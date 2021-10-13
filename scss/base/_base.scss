@@ -6,8 +6,20 @@
 
 html{
     font-size: 62.5%;
+    @include response(tab-land){
+        font-size: 56.25%;
+    }
+    @include response(tab-port){
+        font-size: 50%;
+    }
+    @include response(big-desktop){
+        font-size: 75%;
+    }
 }
 body{
     padding: 2rem;
     font-family: $font-primary;
+    @include response(tab-port){
+        padding: 0;
+    }
 }

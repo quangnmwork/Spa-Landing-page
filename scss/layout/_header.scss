@@ -56,7 +56,11 @@
         }
         
     }
-    
+    @include response(phone){
+        &__right{
+            display: none;
+        }
+    }
     &__text-box{
         @include absCenter ;
         display: flex;

@@ -10,6 +10,40 @@
     &__form {
         width: 50%;
         padding: 6rem;
+        @include response(tab-land){
+            width: 70%;
+        }
+        @include response(tab-port){
+            width: 100%;
+        }
+     
+        
+    }
+    @include response(tab-land){
+        background-image:linear-gradient(105deg,rgba($color-white,.9) 0%,rgba($color-white,.9) 60%
+        ,transparent 60%)
+        , url('../../img/spa-bg.jpg');
+        background-size: cover;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, $alpha: 1.0);
+        height: 50rem;
+    }
+    @include response(tab-port){
+        background-image:linear-gradient(to right,rgba($color-white,.9) 0%,
+        rgba($color-white,.9) 0%,)
+        , url('../../img/spa-bg.jpg');
+        background-size: cover;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, $alpha: 1.0);
+        height: 50rem;
+    }
+    @include response(phone){
+        background-image:linear-gradient(105deg,rgba($color-white,.9) 0%,rgba($color-white,.9) 100%
+        ,transparent 100%);
+        background-size: cover;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, $alpha: 1.0);
+        height: 40rem;
     }
 }
 .form-heading{
@@ -22,6 +56,12 @@
         font-weight: 700;
         color: transparent;
         transition: all .2s ease-in-out;
+        @include response(tab-port){
+            font-size: 3rem;
+        }
+        @include response(phone){
+            font-size: 2.5rem;
+        }
     }
     &__text:hover {
         transform: skewY(1deg) skewX(10deg) scale(1.1);
@@ -33,6 +73,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    @include response(tab-port){
+        width: 100%;
+    }
     &__input {
         font-size: 1.5rem;
         padding: 1.5rem 2rem;
@@ -46,7 +90,6 @@
         &::-webkit-input-placeholder{
             color: $color-gray;
         }
-        
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .5);
@@ -64,12 +107,22 @@
     &__radio-group {
         width: 45%;
         display: inline-block;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        @include response(phone){
+            display: block;
+            margin-top: 0rem;
+        }
     }
     &__radio-label{
         font-size: 1.6rem;
         cursor: pointer;
         position:relative;
         padding-left: 4.5rem;
+        @include response(phone){
+            font-size: 1rem;
+            padding-left: 3rem;
+        }
     }
     &__radio-button {
         width: 3rem;
@@ -92,6 +145,14 @@
             background-color: $color-primary;
             opacity: 0;
             transition: all .2s ease-in;
+            @include response(phone){
+                height: 1rem;
+                width: 1rem;
+            }
+        }
+        @include response(phone){
+            width: 2rem;
+            height: 2rem;
         }
     }
     &__radio-input {
@@ -103,6 +164,10 @@
     &__btn{
         text-align: center;
         padding: 1.5rem 3rem;
-        
+        margin-top: 3.5rem;
+        @include response(phone){
+            padding: .6rem 2rem;
+            margin-top: .5rem;
+        }
     }
 }

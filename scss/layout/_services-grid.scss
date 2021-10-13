@@ -1,0 +1,47 @@
+.services-container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services{
+    width: 80%;
+    margin:7rem  auto;
+    
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(33rem, 1fr)); 
+    grid-column-gap: 5rem;
+    grid-row-gap: 3rem;
+    &__item {
+        border-bottom: 1px solid rgba($color-black,.2);
+        position: relative;
+    }
+    &__name{
+        color: $color-black;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+    &__descript{
+        margin-top: .7rem;
+        font-size: 1rem;
+        color: $color-gray;
+        margin-bottom: 1rem;
+    }
+    &__price{
+        font-family: $font-display;
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 1.7rem;
+        position: absolute;
+        top:0;
+        right: 0;
+      
+    }
+    &__btn{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+}

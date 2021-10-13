@@ -13,3 +13,12 @@
     padding: 15rem 0;
     background-image: $linear-background;
 }
+.section-stats{
+    padding: 5rem 5rem;
+    background-image: linear-gradient(to right bottom,$color-secondary .3 , $color-secondary-dark .5);
+}
+.section-services{
+    background-color: rgba($color-gray,.1);
+    padding: 10rem 0;
+    
+}

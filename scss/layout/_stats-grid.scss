@@ -1,0 +1,9 @@
+
+.stats-grid{
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    grid-column: center-start/center-end;
+    grid-template-columns: repeat(4, minmax(26rem, 1fr));
+    justify-items: center; 
+}

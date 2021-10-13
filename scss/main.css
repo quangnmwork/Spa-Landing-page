@@ -883,6 +883,7 @@ body {
 
 @media (max-width: 56.25em) {
   .book__form {
+    padding: 3rem;
     width: 100%;
   }
 }

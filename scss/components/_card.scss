@@ -18,15 +18,15 @@
         font-weight: 200;
     }
     &--1 { 
-        background-image:$linear-background, url("../../img/phi1.jpeg");
+        background-image:$linear-background, url("/img/phi1.jpeg");
     
     }
     &--2 {
-        background-image:$linear-background, url("../../img/phi2.jpeg");
+        background-image:$linear-background, url("/img/phi2.jpeg");
         
     }
     &--3{
-        background-image:$linear-background, url("../../img/phi2.jpeg");
+        background-image:$linear-background, url("/img/phi3.jpeg");
     }
 }
 .card-expert{

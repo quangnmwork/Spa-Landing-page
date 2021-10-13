@@ -1,0 +1,6 @@
+.benefit-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(2.5rem, 1fr));
+    grid-template-rows: repeat(2, 38rem); 
+    box-shadow: 0 1.5rem 2rem rgba($color-black,.4);
+}

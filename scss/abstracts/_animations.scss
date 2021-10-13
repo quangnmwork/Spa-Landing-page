@@ -1,0 +1,28 @@
+
+@keyframes pulseUp{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+        box-shadow: 0 .3rem .2rem rgba($color: #000000, $alpha: .2);
+    }
+
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fade{
+    animation: fade .5s ease-in-out;
+}

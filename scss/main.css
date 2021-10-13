@@ -276,18 +276,18 @@ body {
 }
 
 .card-philsophy--1 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.7))), url(../../img/phi1.jpeg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url(../../img/phi1.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.7))), url("../../img/phi1.jpeg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url("../../img/phi1.jpeg");
 }
 
 .card-philsophy--2 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.7))), url(../../img/phi2.jpeg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url(../../img/phi2.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.7))), url("../../img/phi2.jpeg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url("../../img/phi2.jpeg");
 }
 
 .card-philsophy--3 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.7))), url(../../img/phi3.jpeg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url(../../img/phi3.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.7))), url("../../img/phi2.jpeg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url("../../img/phi2.jpeg");
 }
 
 .card-expert {

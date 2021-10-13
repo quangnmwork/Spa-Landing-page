@@ -1,0 +1,28 @@
+%promotion {
+    padding: 0.2rem .6rem;
+    font-size: 1.2rem;
+    position: absolute;
+    color: white;
+
+    animation: pulseUp 1s ease-in-out infinite;
+}
+
+.promotion {
+
+    &--hot {
+        @extend %promotion;
+        background-color: $color-primary;
+        text-transform: capitalize;
+        top: 0;
+        right: 22%;
+
+    }
+
+    &--popular {
+        @extend %promotion;
+        background-color: $color-secondary;
+        text-transform: capitalize;
+        top: 0;
+        right: 22%;
+    }
+}

@@ -1,0 +1,108 @@
+.book { 
+    background-image:linear-gradient(105deg,rgba($color-white,.9) 0%,rgba($color-white,.9) 50%
+    ,transparent 50%),url('../../img/spa-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, $alpha: 1.0);
+    height: 55rem;
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}
+.form-heading{
+    
+    &__text { 
+        background-image: linear-gradient(to right bottom ,$color-primary .3 , $color-primary-dark.7);
+        font-size: 4rem;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 700;
+        color: transparent;
+        transition: all .2s ease-in-out;
+    }
+    &__text:hover {
+        transform: skewY(1deg) skewX(10deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, $alpha: 0.1);
+    }
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 3px;
+        border: none;
+        color:inherit;
+        font-family: inherit;
+        background-color: ($color-white,.5);
+        width: 75%;
+        display: block;
+        &::-webkit-input-placeholder{
+            color: $color-gray;
+        }
+        
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .5);
+            border-bottom: 3px solid $color-primary;
+            transition: all .3s ease-in-out;
+        }
+    }
+    &__label{
+        font-size: 1.2rem;
+        margin-top: .7rem;
+        margin-left: 2rem;
+        font-weight: 700;
+        display: block;
+    }
+    &__radio-group {
+        width: 45%;
+        display: inline-block;
+    }
+    &__radio-label{
+        font-size: 1.6rem;
+        cursor: pointer;
+        position:relative;
+        padding-left: 4.5rem;
+    }
+    &__radio-button {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 3px solid $color-primary;
+        position: absolute;
+        display: inline-block;
+        top: -0.5rem;
+        left: 0;
+        &::after{
+            content: "";
+            height: 1.8rem;
+            width: 1.8rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: all .2s ease-in;
+        }
+    }
+    &__radio-input {
+        display: none;
+    }
+    &__radio-input:checked ~ &__radio-label &__radio-button::after{
+        opacity: 1;
+    }
+    &__btn{
+        text-align: center;
+        padding: 1.5rem 3rem;
+        
+    }
+}

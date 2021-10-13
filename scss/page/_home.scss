@@ -22,3 +22,15 @@
     padding: 10rem 0;
     
 }
+.section-methods{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section-products{
+    padding: 7rem 10rem;
+}
+.section-booking{
+    padding: 10rem;
+    background-image: linear-gradient(to right bottom , $color-primary , $color-primary-dark);
+}

@@ -156,3 +156,48 @@
         margin-bottom: 1rem;
     }
 }
+.card-methods{
+    position: relative;
+    overflow: hidden;
+    &__img{
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        width: 100%;
+        height: 38rem;
+        transition: all .2s ease-in;
+    }
+    &__info{
+        text-align: center;
+        padding: 1.5rem 0;
+        position: absolute;
+        bottom: .6rem;
+        left: 0;
+        width: 100%;
+        transition: all .4s .2s ease-in-out;
+        //for effect 
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(1.2rem);
+
+    }
+    &__heading{
+        font-size: 2.1rem;
+        color: #eee;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    &__detail{
+        color: #eee;
+        font-size: 1.4rem;
+    } 
+}
+.card-methods:hover .card-methods__img {        
+    filter: blur(.5rem) brightness(60%);
+}
+
+.card-methods:hover .card-methods__info{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

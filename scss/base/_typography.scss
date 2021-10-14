@@ -24,6 +24,9 @@
     color : $color-gray;
     font-weight: 600;
     font-size: 2rem;
+    @include response(tab-port){
+        font-size: 2.3rem;
+    }
 }
 .heading-tertiary{
     color : $color-white ; 

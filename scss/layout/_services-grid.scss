@@ -9,15 +9,17 @@
 .services{
     width: 80%;
     margin:7rem  auto;
-    
     grid-column: center-start / center-end;
     display: grid;
     grid-template-columns: repeat(2, minmax(33rem, 1fr)); 
+    align-items: center;
     grid-column-gap: 5rem;
     grid-row-gap: 3rem;
     @include response(tab-port){
-        grid-template-columns: repeat(1, minmax(33rem, 1fr)); 
+        grid-template-columns: repeat(1, 1fr); 
         grid-row-gap: 2rem;
+        width: 70%;
+        grid-column-gap: 0rem;
         
     }
     &__item {
@@ -26,14 +28,20 @@
     }
     &__name{
         color: $color-black;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-transform: uppercase;
+        @include response(tab-port){
+            font-size: 1.4rem;
+        }
     }
     &__descript{
         margin-top: .7rem;
         font-size: 1rem;
         color: $color-gray;
         margin-bottom: 1rem;
+        @include response(tab-port){
+            font-size: 1rem;
+        }
     }
     &__price{
         font-family: $font-display;
@@ -43,6 +51,9 @@
         position: absolute;
         top:0;
         right: 0;
+        @include response(tab-port){
+            font-size: 1.4rem;
+        }
       
     }
     &__btn{

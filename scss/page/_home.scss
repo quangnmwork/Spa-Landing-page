@@ -2,8 +2,11 @@
     padding: 9rem 10rem;
    
     @include response(tab-port){
+        padding: 5rem 3rem;
+    }  
+    @include response(phone){
         padding: 5rem 0rem;
-    }    
+    }      
 }
 .section-philsophy{
     padding: 5rem 1rem;
@@ -26,6 +29,9 @@
 .section-services{
     background-color: rgba($color-gray,.1);
     padding: 10rem 0;
+    @include response(tab-port){
+        padding: 5rem 0rem;
+    }
     
 }
 .section-methods{
@@ -35,11 +41,12 @@
     @include response(tab-port){
         flex-direction: column;
     }
+    
 }
 .section-products{
     padding: 7rem 10rem;
     @include response(tab-land){
-        padding : 7rem 12rem ; 
+        padding : 5rem 2rem ; 
 
     }
     @include response(tab-port){

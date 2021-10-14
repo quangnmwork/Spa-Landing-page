@@ -4,11 +4,11 @@
     grid-template-rows: repeat(2, 38rem); 
     box-shadow:0 1rem 1rem rgba($color-black,.2);
     @include response(tab-port){
-        grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
         grid-template-rows: repeat(3, 38rem); 
     }
     @include response(phone){
-        grid-template-columns: repeat(2, minmax(2.5rem,1fr));
+        grid-template-columns: repeat(2, minmax(10rem,1fr));
         grid-template-rows: repeat(3, min-content);
     }
 }

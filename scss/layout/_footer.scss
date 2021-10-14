@@ -3,62 +3,75 @@
     padding: 5rem 10rem;
     background-color: #333;
     @include response(tab-port){
-        padding: 5rem 3rem;
-    }
-    &__row {
-        display: flex;
-        gap: 2rem;
-        @include response(tab-port){
-            flex-direction: column;
-            gap: 0;
-            align-items: center;
-
-        }
+        padding: 5rem 2rem;
+        
     }
     &__logo-box {
-        margin: 0 auto;
-        width: 35%;
+        margin-bottom: 8rem;
+        text-align: center;
         @include response(tab-port){
-            width: 30%;
+           margin-bottom: 4rem;
         }
     }
     &__logo {
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        height: 35rem;
-        @include response(tab-land){
-            height: 30rem;
-        }
-        @include response(tab-port){
-            height: 25rem;
-        }
+        width: 20rem;
+        height: auto;
 
     }
+    &__row {
+        max-width: 114rem;
+        margin: 0 auto;
+        
+        @include response(tab-port){
+            max-width: 50rem;
+        }
+        &:not(:last-child) {
+            // select all element except last child
+            margin-bottom: 8rem;
+            @include response(tab-port){
+                margin-bottom: 4rem;
+            }
+        }
+        @include clearfix ;
+    }
+   
+    
     &__col { 
-        width: 100%;
+        width: calc((100% - #{$gutter-horizontal})/2);
+        float: left;
         @include response(tab-port){
             :not(:last-child){
                 margin-bottom: 1rem;
             }
             
         }
+        &:not(:last-child) {
+            margin-right: 6rem;
+            @include response(tab-port){
+                margin-right: 0;
+                margin-bottom: 4rem;
+            }
+        }
+        @include response(tab-port){
+            width: 100% !important;
+        }
+        
     }
     &__list{
         list-style: none;
-        @include response(phone){
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        @include response(tab-port){
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+        // @include response(phone){
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+        // @include response(tab-port){
+        //     width: 100%;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
         
     }
     &__item {
@@ -69,7 +82,7 @@
     }
     &__link{
         &:link,&:visited{
-            font-size: 2rem;
+            
             color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
@@ -84,29 +97,23 @@
     }
     &__copyright {
         color: $color-white;
+        @include response(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
     &__navigation {
-        color :$color-white ;
-        display: flex;
-        &--2{
-            flex-direction: column;
-        }
-        font-size: 2rem;
+        border-top: 1px solid $color-gray;
+        display: inline-block;
+        padding: 1.5rem;
+        color: $color-white;
+        font-size: 1.6rem;
         @include response(tab-port){
-            
-            &--1{
-                width: 100%;
-                margin-bottom: 2rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.5rem;
-            }
-            &--2{
-                align-items: center;
-            }
+            width: 100%;
+            font-size: 1.2rem;
+            text-align: center;
         }
+        
     
     }
     

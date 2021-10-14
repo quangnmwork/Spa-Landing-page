@@ -33,6 +33,9 @@
     &--red{
         background-color: $color-primary;  
         padding: 2rem 4rem;
+        @include response(tab-port){
+            padding : 1.5rem 2.2rem ;
+        }
         @include response(phone){
             padding : 1rem 2rem ;
         }
@@ -40,6 +43,9 @@
     &--green{
         background-color: $color-secondary;
         padding: 1rem 2rem;
+        @include response(tab-port){
+            padding : .8rem 1.8rem ;
+        }
         &:hover{
             background-color: $color-secondary;
             transform: translateY(-.5rem);        

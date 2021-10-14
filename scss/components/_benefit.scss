@@ -53,4 +53,7 @@
             align-items: center;
         }
     }
+    @include response(phone){
+        padding: 2rem;
+    }
 }

@@ -12,12 +12,12 @@
         padding: 6rem;
         @include response(tab-land){
             width: 70%;
+            
         }
         @include response(tab-port){
             padding: 3rem;
             width: 100%;
         }
-     
         
     }
     @include response(tab-land){
@@ -59,6 +59,7 @@
         transition: all .2s ease-in-out;
         @include response(tab-port){
             font-size: 3rem;
+            text-align: center;
         }
         @include response(phone){
             font-size: 2.5rem;
@@ -97,19 +98,34 @@
             border-bottom: 3px solid $color-primary;
             transition: all .3s ease-in-out;
         }
+        @include response(tab-port){
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+        
     }
     &__label{
         font-size: 1.2rem;
         margin-top: .7rem;
         margin-left: 2rem;
         font-weight: 700;
+        width: 75%;
         display: block;
+        @include response(tab-port){
+            font-size: 1.4rem;
+            display: block;
+            margin: 1rem auto;
+            
+        }
     }
     &__radio-group {
         width: 45%;
         display: inline-block;
         margin-bottom: 2rem;
         margin-top: 1rem;
+        @include response(tab-port){
+            text-align: center;
+        }
         @include response(phone){
             display: block;
             margin-top: 0rem;
@@ -120,6 +136,9 @@
         cursor: pointer;
         position:relative;
         padding-left: 4.5rem;
+        @include response(tab-port){
+            font-size: 1.4rem;
+        }
         @include response(phone){
             font-size: 1rem;
             padding-left: 3rem;
@@ -166,6 +185,10 @@
         text-align: center;
         padding: 1.5rem 3rem;
         margin-top: 3.5rem;
+        @include response(tab-port){
+            display: block;
+            margin: 1.6rem auto;
+        }
         @include response(phone){
             padding: .6rem 2rem;
             margin-top: .5rem;

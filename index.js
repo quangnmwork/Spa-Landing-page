@@ -36,13 +36,11 @@ const changeStoriesHandle = () => {
     }
     indexImg++;
     const {quote ,img,name} = storiesArray[indexImg-1];
-    cardStory.style.display = 'none'
+    cardStory.classList.toggle('fade'); 
     
     cardStoryQuoteDetail.textContent = quote;
     cardStoryImgPerson.src = img ; 
     cardStoryNamePerson.textContent = name ; 
-   
-    cardStory.style.display = 'flex';
     
 
     setTimeout(changeStoriesHandle,3000);

@@ -34,25 +34,25 @@
 
 @-webkit-keyframes fade {
   0% {
-    opacity: .5;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: .2;
   }
 }
 
 @keyframes fade {
   0% {
-    opacity: .5;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: .2;
   }
 }
 
 .fade {
-  -webkit-animation: fade .7s ease-in-out;
-          animation: fade .7s ease-in-out;
+  -webkit-animation: fade 5s ease-in-out;
+          animation: fade 5s ease-in-out;
 }
 
 *, *::after, *::before {
@@ -536,8 +536,6 @@ body {
   margin: 0 auto;
   width: 60%;
   position: relative;
-  -webkit-animation: fade 3s ease-in-out infinite;
-          animation: fade 3s ease-in-out infinite;
 }
 
 .card-stories__img {

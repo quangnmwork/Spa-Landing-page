@@ -1,3 +1,9 @@
+section[class*='section']{
+    transition: transform 1s, opacity 1s;
+}
+footer[class*='section']{
+    transition: transform 1s, opacity 1s;
+}
 .section-benefit{
     padding: 9rem 10rem;
    
@@ -62,4 +68,9 @@
     @include response(tab-port){
         padding:5rem ;
     }
+}
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+    transition: all .3s ease-in-out;
 }

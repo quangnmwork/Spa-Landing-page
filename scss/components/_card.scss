@@ -122,9 +122,11 @@
     margin: 0 auto;
     width: 60%;
     position: relative;
+    animation: fade 3s ease-in-out infinite;
     &__img{
         border-radius: 50%;
         height: 7rem;
+        
     }
     &__person {
         display: flex;
@@ -144,6 +146,9 @@
         position: absolute;
         top: -5%;
         left: -2%;
+        @include response(tab-port){
+            left: -3.5%;
+        }
     }
     &__quote-detail{
         color: $color-white;

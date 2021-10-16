@@ -34,7 +34,7 @@
 
 @-webkit-keyframes fade {
   0% {
-    opacity: .4;
+    opacity: .5;
   }
   100% {
     opacity: 1;
@@ -43,7 +43,7 @@
 
 @keyframes fade {
   0% {
-    opacity: .4;
+    opacity: .5;
   }
   100% {
     opacity: 1;
@@ -51,8 +51,8 @@
 }
 
 .fade {
-  -webkit-animation: fade .5s ease-in-out;
-          animation: fade .5s ease-in-out;
+  -webkit-animation: fade .7s ease-in-out;
+          animation: fade .7s ease-in-out;
 }
 
 *, *::after, *::before {
@@ -536,6 +536,8 @@ body {
   margin: 0 auto;
   width: 60%;
   position: relative;
+  -webkit-animation: fade 3s ease-in-out infinite;
+          animation: fade 3s ease-in-out infinite;
 }
 
 .card-stories__img {
@@ -571,6 +573,12 @@ body {
   position: absolute;
   top: -5%;
   left: -2%;
+}
+
+@media (max-width: 56.25em) {
+  .card-stories__quote {
+    left: -3.5%;
+  }
 }
 
 .card-stories__quote-detail {
@@ -1634,6 +1642,20 @@ body {
   }
 }
 
+section[class*='section'] {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+footer[class*='section'] {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
 .section-benefit {
   padding: 9rem 10rem;
 }
@@ -1742,5 +1764,13 @@ body {
   .section-booking {
     padding: 5rem;
   }
+}
+
+.section--hidden {
+  opacity: 0;
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

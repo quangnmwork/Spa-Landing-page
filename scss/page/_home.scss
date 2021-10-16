@@ -10,6 +10,9 @@
 }
 .section-philsophy{
     padding: 5rem 1rem;
+    @include response(tab-port){
+        padding: 5rem 0rem;
+    }
 }
 .section-expert{
     padding: 10rem 10rem;

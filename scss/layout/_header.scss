@@ -1,11 +1,15 @@
 .header{
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 95vh;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url(../img/hero.jpg);
     position: relative;
     padding: 2rem;
+    @include response(phone){
+        background-position: left;
+    }
     &__logo-img{
         height: 10rem;
         width: 10rem;
@@ -59,6 +63,9 @@
     @include response(phone){
         &__right{
             display: none;
+        }
+        &__img{
+            
         }
     }
     &__text-box{

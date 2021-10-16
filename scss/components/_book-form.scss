@@ -18,6 +18,9 @@
             padding: 3rem;
             width: 100%;
         }
+        @include response(phone){
+            padding: 1.5rem;
+        }
         
     }
     @include response(tab-land){
@@ -128,6 +131,7 @@
         }
         @include response(phone){
             display: block;
+            margin-left: .7rem;
             margin-top: 0rem;
         }
     }

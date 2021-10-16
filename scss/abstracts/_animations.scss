@@ -16,13 +16,13 @@
 
 @keyframes fade{
     0%{
-        opacity: 1;
+        opacity: .5;
     }
     100%{
-        opacity: .2;
+        opacity: 1;
     }
 }
 
 .fade{
-    animation: fade 5s ease-in-out;
+    animation: fade .4s ease-in-out;
 }

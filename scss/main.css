@@ -34,25 +34,25 @@
 
 @-webkit-keyframes fade {
   0% {
-    opacity: 1;
+    opacity: .5;
   }
   100% {
-    opacity: .2;
+    opacity: 1;
   }
 }
 
 @keyframes fade {
   0% {
-    opacity: 1;
+    opacity: .5;
   }
   100% {
-    opacity: .2;
+    opacity: 1;
   }
 }
 
 .fade {
-  -webkit-animation: fade 5s ease-in-out;
-          animation: fade 5s ease-in-out;
+  -webkit-animation: fade .4s ease-in-out;
+          animation: fade .4s ease-in-out;
 }
 
 *, *::after, *::before {
@@ -117,6 +117,10 @@ body {
 
 .u-color-white {
   color: #fff;
+}
+
+.u-display-none {
+  display: none;
 }
 
 .heading-primary {
